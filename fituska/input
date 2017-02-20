@@ -1,0 +1,37 @@
+Hello World!
+Hello {World!}
+asd$
+asd}
+asdasd@{asdasd@@asdasd@}asdasd@$
+Hello {{World!}
+Hello {World@@ @} @{  @$@m}
+Hello {World@@ @} @@{  @$@m}
+@def@h1{$a}{<h1>$a<h1>}@h1{Hello} World
+@h1$asd
+@1h1
+@def@h1{$a}{<h1>$a<h1>}@h1{Hello} World @undef@h1 @h1{Hello}World
+@__def__@h1{$a}{<h1>$a<h1>}@h1{Hello} World @__undef__@h1 @h1{Hello}World
+@undef@h1
+@set{-INPUT_SPACES}Hello World	tabbed
+@set{-INPUT_SPACES}@def @h1{$a}{<h1>$a<h1>}@h1{ World }
+@def @h1{$a}{<h1>$a<h1>
+@def@h1{}{ Hello bello}@h1 World
+@def@h1{$a $b $c}{}@h1 Hello
+@def@h1{$a $b $c}{}@h1@{Hello
+@def@__def__
+@def@__undef__
+@def@__set__
+@undef@__def__
+@undef@__undef__
+@undef@__set__
+@def@h1{$a}{<@$h1>$a<h1>}@h1{Bold}
+@def@h1{$a}{<$h1>$a<h1>}@h1{Bold}
+@def@h1{$a}{<@@$h1>$a<h1>}@h1{Bold}
+@def@h1{$a}{<h1$>$a<h1>}@h1{Bold}
+@def@h1{$a}{<$h1>$a<h1>@h1{Bold}
+@def@h1{$a{<$h1>$a<h1>@h1{Bold}
+@def@h1{$a}{<$h1>$a<h1>
+@def@h1{$a
+@def@h1{}{first}@def@h2{$a$b}{$a and $b}@h2@h1{second}
+@def@foo{$a}{@def$a{$x}{$a$x}}@foo@bar@bar{ium}
+@def@foo{$a}{@def$a{$x}{$a$x}}@def@barium{}{barium}@foo@bar@bar{ium}

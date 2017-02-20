@@ -1,0 +1,37 @@
+Simple String...............:
+Simple Block................:
+Invalid $...................:
+Invalid }...................:
+Special Characters..........:
+Unclosed Block..............:
+Block w/ Special Chars......:
+Block w/ Double Escape......:
+Def Macro and use it........:
+Undefined macro.............:
+Invalid macro name..........:
+def+use+undef+use...........:
+same with longform..........:
+undef not existing macro....:
+Using @set..................:
+bad @def with @set..........:
+Bad @def....................:
+No arg macro................:
+Delete Args macro...........:
+Same w/ escape char.........:
+Redef of @__def__...........:
+Redef of @__undef__.........:
+Redef of @__set__...........:
+Undef of @__def__...........:
+Undef of @__undef__.........:
+Undef of @__set__...........:
+Escaped $ in macro arg......:
+$xy not in arg list.........:
+Double escaped $ in arg.....:
+<h1$> in macro..............:
+Unclosed Macro Body.........:
+Unclosed Macro Args.........:
+Unclosed Macro Body:EOF.....:
+Unclosed Macro Args:EOF.....:
+Macro as arg................:
+@def@foo from jmp.pdf.......:
+@def@foo that should work...:

@@ -1,0 +1,20 @@
+@set{-INPUT_SPACES}
+
+@def @_report {$a $b} {
+  {<$a}
+  { == }
+  {$b>}
+}
+
+@def @report {} {@_report}
+
+@def @gobble {$x} {}
+@def @bye {} {@set{+INPUT_SPACES}@undef@bye@gobble}
+
+@def @do {$x} {@set{-INPUT_SPACES}$x@set{+INPUT_SPACES}}
+
+
+
+@bye
+Lorem ipsum @do{@report {True}   {not False}} .
+...and so on.
