@@ -18,9 +18,9 @@ Hello {World@@ @} @@{  @$@m}
 @def@h1{}{ Hello bello}@h1 World
 @def@h1{$a $b $c}{}@h1 Hello
 @def@h1{$a $b $c}{}@h1@{Hello
-@def@__def__
-@def@__undef__
-@def@__set__
+@def@__def__{}{}
+@def@__undef__{}{}
+@def@__set__{}{}
 @undef@__def__
 @undef@__undef__
 @undef@__set__
