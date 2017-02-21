@@ -43,7 +43,7 @@ fi
 #Test opening folder contains space
 $1 $2 --input=$pwd/contains space/in "--output=$pwd/contains space/out" 2>/dev/null
 returncode=$?
-if [ $returncode -eq 1 ]; then
+if [ $returncode -eq 4 ]; then
 	echo -e "Input with space............: \e[32mPASS\e[39m"
 else
 	echo -e "Input with space............: \e[31mFAILED\e[39m"
@@ -52,7 +52,7 @@ fi
 #Test opening folder contains space
 $1 $2 "--input=$pwd/contains space/in" --output=$pwd/contains space/out 2>/dev/null
 returncode=$?
-if [ $returncode -eq 1 ]; then
+if [ $returncode -eq 4 ]; then
 	echo -e "Output with space...........: \e[32mPASS\e[39m"
 else
 	echo -e "Output with space...........: \e[31mFAILED\e[39m"
