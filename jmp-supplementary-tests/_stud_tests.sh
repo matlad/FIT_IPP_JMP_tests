@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 # =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 # IPP - jmp - doplňkové testy - 2016/2017
@@ -56,6 +56,12 @@
 #                      PŘIDÁNO ADAMEM MÁTLEM DÁLE matla                                 #
 #---------------------------------------------------------------------------------------#
 
+function clean {
+	rm *.!!!
+	rm *.out
+	rm *.err
+}
+
 function format {
 	if [ $1 != 0 ]; then
                echo -e "\e[33mDIFF\e[0m"
@@ -101,9 +107,9 @@ echo -e "Diff neznamená chybu pouze, že se vaš vísledek liší s referencí 
 
 #########################################################################################
 
-TASK="../../FIT_IPP_1_MakroProcesor/jmp"
-INTERPRETER="php"
-EXTENSION=php
+TASK="$1/jmp"
+INTERPRETER=$2
+EXTENSION=$3
 #INTERPRETER="python3.6"
 #EXTENSION=py
 
@@ -212,4 +218,4 @@ echo "# test19: Komplexni test @undef & @set; Expected output: test19.out; Expec
 $INTERPRETER $TASK.$EXTENSION --input=${LOCAL_IN_PATH}test19.in --output="${LOCAL_OUT_PATH3}test19.out" 2> ${LOG_PATH}test19.err
 echo -n $? > test19.!!!
 comper "test19" #@autor matla
-
+clean #@author matla
