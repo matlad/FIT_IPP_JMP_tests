@@ -14,7 +14,7 @@ Hello {World@@ @} @@{  @$@m}
 @undef@h1
 @set{-INPUT_SPACES}Hello World	tabbed
 @set{-INPUT_SPACES}@def @h1{$a}{<h1>$a<h1>}@h1{ World }
-@def @h1{$a}{<h1>$a<h1>
+@def@h1{$a}{<h1>$a<h1>
 @def@h1{}{ Hello bello}@h1 World
 @def@h1{$a $b $c}{}@h1 Hello
 @def@h1{$a $b $c}{}@h1@{Hello
