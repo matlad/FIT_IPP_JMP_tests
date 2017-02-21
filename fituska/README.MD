@@ -11,4 +11,4 @@ where INTERPRET is either php or python3
 filename is the name of your script
 
 #Známé problémy:
-Undef nedefinovaného makra #1
+[Undef nedefinovaného makra #1](https://github.com/matlad/FIT_IPP_JMP_tests/issues/1) 
