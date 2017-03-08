@@ -16,7 +16,10 @@ if [ -z $1 ]; then
 	echo "Usage ./run.sh INTERPRET FILENAME"
 	exit 1
 fi
-if [ $1 != "php" ] && [ $1 != "python3" ]; then
+
+type $1 > /dev/null 2>&1;
+
+if  $?; then
 	echo "First argument must be an INTERPRET: php or python3"
 	exit 1
 fi

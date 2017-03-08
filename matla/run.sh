@@ -117,6 +117,19 @@ $INTERPRETER $TASK.$EXTENSION --input=${LOCAL_IN_PATH2}$TEST_NAME.in --output=${
 echo -n $? > $TEST_NAME.!!!
 comper $TEST_NAME
 
+TEST_NAME="test07"
+echo "#$TEST_NAME: @def@\$h{}{}"
+$INTERPRETER $TASK.$EXTENSION --input=${LOCAL_IN_PATH2}$TEST_NAME.in --output=${LOCAL_OUT_PATH2}$TEST_NAME.out 2> ${LOG_PATH}$TEST_NAME.err
+echo -n $? > $TEST_NAME.!!!
+comper $TEST_NAME
+
+TEST_NAME="test08"
+echo "#$TEST_NAME: @def@\${}{}"
+$INTERPRETER $TASK.$EXTENSION --input=${LOCAL_IN_PATH2}$TEST_NAME.in --output=${LOCAL_OUT_PATH2}$TEST_NAME.out 2> ${LOG_PATH}$TEST_NAME.err
+echo -n $? > $TEST_NAME.!!!
+comper $TEST_NAME
+
+
 ########################################################################################
 #echo "$COUNT testu bylo OK a $F_COUNT testů bylo špatně"
-clean 
+#clean 
