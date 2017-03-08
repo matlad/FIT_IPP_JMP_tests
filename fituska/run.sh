@@ -80,18 +80,22 @@ do
 	if [ $returncode -eq "${codes[$i]}" ]; then
 		if [ "${codes[$i]}" -eq 0 ];then
 			if [ "${ref[$i]}" == "$out" ]; then
-				echo -e "${testname[$i]} \e[32mPASS\e[39m"
+				echo -e "$i - ${testname[$i]} \e[32mPASS\e[39m"
 			else
-				echo -e "$i:${testname[$i]} \e[31mFAILED\e[39m"
-				echo "Input: ${into[$i]}"
-				echo "Expected output:${ref[$i]}"
-				echo "Actual output..:$out"
+				if [ "${ref[$i]}" == "\"\"" ] && [ -z $out ]; then
+					echo -e "$i - ${testname[$i]} \e[32mPASS\e[39m"
+				else
+					echo -e "$i - ${testname[$i]} \e[31mFAILED\e[39m"
+					echo "Input: ${into[$i]}"
+					echo "Expected output:'${ref[$i]}'"
+					echo "Actual output..:'$out'"
+				fi
 			fi
 		else
-			echo -e "${testname[$i]} \e[32mPASS\e[39m"
+			echo -e "$i - ${testname[$i]} \e[32mPASS\e[39m"
 		fi
 	else 
-		echo -e "${testname[$i]} \e[31mFAILED\e[39m"
+		echo -e "$i - ${testname[$i]} \e[31mFAILED\e[39m"
 		echo "Input: ${into[$i]}"
 		echo "Expected return code:${codes[$i]}"
 		echo "Actual return code..:$returncode"
