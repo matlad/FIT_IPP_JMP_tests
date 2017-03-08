@@ -1,6 +1,13 @@
 #!/bin/bash
 
-INTERPRET=php # php5.6 pro merlin
+
+HN=`hostname`
+if [[ $HN = "merlin.fit.vutbr.cz" ]]; then
+  INTERPRET=php5.6   #interprei na merlinovi
+else
+  INTERPRET=php  #interpret jinde (doma)
+fi
+
 EXTENSION=php
 MYPATH="../FIT_IPP_1_MakroProcesor" #cesta k *adresáři* v němž je váš skript JMP.php
 FULLPATH=$(pwd)/$MYPATH
