@@ -1,5 +1,7 @@
 # FIT_IPP_JMP_tests
-Testy k projektu JMP (Jednodůchý mackro procesor)  předmět IPP (FIT)
+Testy k projektu JMP (Jednodůchý mackro procesor)  předmět IPP (FIT)  
+# Vaše příspěvky jsou výtány. Stačí si forknou repo a dát do vlastní větve a dát pull reques. (nebo napsat na mail xmatla00@stud...)
+# Předem dík za spolupráci.
 ##Spuštění
 ./run.sh spustí všechny dílčí testy po sobě.  
 Je potřeba naležitě upravyt proměné:  
